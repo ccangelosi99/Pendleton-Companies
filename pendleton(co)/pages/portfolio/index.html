@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse Pendleton Companies real estate portfolio by location, product type, and project type.">
+  <meta property="og:title" content="Portfolio | Pendleton Companies">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://www.pendletoncompanies.com">
+  <title>Portfolio | Pendleton Companies</title>
+  <link rel="icon" href="../../assets/icons/favicon.svg?v=2" type="image/svg+xml">
+  <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body class="has-subnav hero-overlap hero-nav-transparent portfolio-overview-page">
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <a href="../../index.html" class="navbar__brand" aria-label="Pendleton Companies Home">
+    <img src="../../assets/icons/logo.svg" alt="Pendleton Companies Logo" class="navbar__logo" width="56" height="56">
+    <span class="navbar__company-name"><span class="navbar__company-name-pendleton">Pendleton</span> <span class="navbar__company-name-companies">Companies</span></span>
+  </a>
+  <ul class="navbar__nav" role="menubar">
+    <li><a href="../../pages/about/mission.html" class="navbar__link" data-i18n="nav_about">About</a></li>
+    <li><a href="../../pages/portfolio/index.html" class="navbar__link" data-i18n="nav_portfolio">Portfolio</a></li>
+    <li><a href="../../pages/careers/index.html" class="navbar__link" data-i18n="nav_careers">Careers</a></li>
+    <li><a href="../../pages/portal/index.html" class="navbar__link" data-i18n="nav_portal">Portal</a></li>
+    <li><button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+      <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    </button></li>
+    <li><select id="lang-switcher" aria-label="Language" style="font-family:var(--font-ui);font-size:.75rem;background:transparent;border:1px solid rgba(255,255,255,.3);border-radius:4px;color:inherit;padding:4px 8px;cursor:pointer;">
+      <option value="en">EN</option><option value="es">ES</option><option value="fr">FR</option><option value="de">DE</option><option value="zh">ZH</option>
+    </select></li>
+  </ul>
+  <button class="navbar__hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<nav class="subnav" aria-label="Section navigation"><ul class="subnav__list"><li><a href="../../pages/portfolio/index.html" class="subnav__link" data-i18n="sub_portfolio_overview">Overview</a></li><li><a href="../../pages/portfolio/real-estate.html" class="subnav__link" data-i18n="sub_portfolio_realestate">Real Estate</a></li><li><a href="../../pages/portfolio/stocks.html" class="subnav__link">Equities</a></li><li><a href="../../pages/portfolio/bonds.html" class="subnav__link">Fixed Income</a></li><li><a href="../../pages/portfolio/private-credit.html" class="subnav__link">Private Credit</a></li></ul></nav>
+
+<div class="page-content">
+  <section class="hero-video hero-video--portfolio-overview" aria-label="Portfolio overview hero">
+    <img class="hero-video__video" src="../../assets/images/Portfolio/portfolio_hero.jpg" alt="" loading="eager" decoding="async">
+    <div class="hero-video__overlay"></div>
+    <div class="hero-video__content hero-video__content--split">
+      <div class="hero-video__split">
+        <div class="hero-video__split-left reveal-left">
+          <p class="label hero-video__subtitle--mission hero-video__subtitle--warm">Portfolio Overview</p>
+          <h1 class="hero-video__mission-heading hero-video__mission-heading--stacked"><span class="hero-video__word-primary">Focused.</span> <span class="hero-video__word-accent">Balanced.</span></h1>
+        </div>
+        <div class="hero-video__split-right reveal-right">
+          <h2 class="hero-video__mission-title hero-video__mission-title--underlined">How We Invest</h2>
+          <p class="hero-video__mission-copy">Our portfolio strategy combines real estate, equities, fixed income, and private credit to balance growth, stability, and downside protection. Every allocation is guided by long-term conviction and rigorous underwriting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio-allocation">
+    <div class="container">
+      <span class="label">Asset Allocation</span>
+      <h2 class="h-section" style="margin-top:var(--sp-3);margin-bottom:var(--sp-12)">Investment Allocation by Sector</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-8);align-items:center">
+        <div>
+          <div class="grid grid--2" style="gap:var(--sp-6)">
+            <a href="../../pages/portfolio/real-estate.html" class="reveal" style="padding:var(--sp-8);border:1px solid var(--clr-border);border-radius:var(--radius-lg);border-top:3px solid #4bacc6;text-align:center;text-decoration:none;display:block;transition:transform 0.3s ease,box-shadow 0.3s ease" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 24px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+              <div style="font-size:2.5rem;margin-bottom:var(--sp-2);font-family:var(--font-display);font-weight:700;color:#4bacc6">55%</div>
+              <h3 style="font-family:var(--font-heading);font-size:1.25rem;margin-bottom:var(--sp-3);color:var(--clr-text)">Real Estate</h3>
+              <p style="font-size:.875rem;color:var(--clr-text-muted);line-height:1.8">Core portfolio allocation in multifamily, industrial, office, and retail properties across 25+ states.</p>
+            </a>
+            <a href="../../pages/portfolio/stocks.html" class="reveal delay-1" style="padding:var(--sp-8);border:1px solid var(--clr-border);border-radius:var(--radius-lg);border-top:3px solid #ffbb52;text-align:center;text-decoration:none;display:block;transition:transform 0.3s ease,box-shadow 0.3s ease" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 24px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+              <div style="font-size:2.5rem;margin-bottom:var(--sp-2);font-family:var(--font-display);font-weight:700;color:#ffbb52">20%</div>
+              <h3 style="font-family:var(--font-heading);font-size:1.25rem;margin-bottom:var(--sp-3);color:var(--clr-text)">Equities</h3>
+              <p style="font-size:.875rem;color:var(--clr-text-muted);line-height:1.8">Strategic equity positions in publicly traded REITs and growth-oriented companies.</p>
+            </a>
+            <a href="../../pages/portfolio/bonds.html" class="reveal delay-2" style="padding:var(--sp-8);border:1px solid var(--clr-border);border-radius:var(--radius-lg);border-top:3px solid #3a8fa8;text-align:center;text-decoration:none;display:block;transition:transform 0.3s ease,box-shadow 0.3s ease" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 24px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+              <div style="font-size:2.5rem;margin-bottom:var(--sp-2);font-family:var(--font-display);font-weight:700;color:#3a8fa8">15%</div>
+              <h3 style="font-family:var(--font-heading);font-size:1.25rem;margin-bottom:var(--sp-3);color:var(--clr-text)">Fixed Income</h3>
+              <p style="font-size:.875rem;color:var(--clr-text-muted);line-height:1.8">Investment-grade fixed income for portfolio stability and consistent cash flow generation.</p>
+            </a>
+            <a href="../../pages/portfolio/private-credit.html" class="reveal delay-3" style="padding:var(--sp-8);border:1px solid var(--clr-border);border-radius:var(--radius-lg);border-top:3px solid #7cc8dc;text-align:center;text-decoration:none;display:block;transition:transform 0.3s ease,box-shadow 0.3s ease" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 24px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+              <div style="font-size:2.5rem;margin-bottom:var(--sp-2);font-family:var(--font-display);font-weight:700;color:#7cc8dc">10%</div>
+              <h3 style="font-family:var(--font-heading);font-size:1.25rem;margin-bottom:var(--sp-3);color:var(--clr-text)">Private Credit</h3>
+              <p style="font-size:.875rem;color:var(--clr-text-muted);line-height:1.8">Direct lending and mezzanine financing opportunities with attractive risk-adjusted returns.</p>
+            </a>
+          </div>
+        </div>
+        <div class="portfolio-allocation__viz">
+          <div class="portfolio-allocation__chart-wrap">
+            <canvas id="chart-allocation" width="300" height="300"></canvas>
+          </div>
+          <div class="portfolio-allocation__legend">
+            <div class="portfolio-allocation__legend-item"><div class="portfolio-allocation__legend-dot" style="background:#4bacc6"></div>Real Estate — 55%</div>
+            <div class="portfolio-allocation__legend-item"><div class="portfolio-allocation__legend-dot" style="background:#ffbb52"></div>Equities — 20%</div>
+            <div class="portfolio-allocation__legend-item"><div class="portfolio-allocation__legend-dot" style="background:#3a8fa8"></div>Fixed Income — 15%</div>
+            <div class="portfolio-allocation__legend-item"><div class="portfolio-allocation__legend-dot" style="background:#7cc8dc"></div>Private Credit — 10%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<footer class="footer">
+  <div class="footer__accent-line"></div>
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="../../index.html"><img src="../../assets/icons/logo.svg" alt="" width="44" height="44"></a>
+        <span style="font-family:var(--font-ui);font-size:1rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:#fff;display:block;margin:.75rem 0 .5rem">Pendleton Companies</span>
+        <p class="footer__tagline">"Proving the best products and the best prices requires a non-stop commitment to value and operational excellence."</p>
+      </div>
+      <div class="footer__col"><h4>Company</h4><ul>
+        <li><a href="../../pages/about/mission.html">Mission</a></li>
+        <li><a href="../../pages/about/story.html">Our Story</a></li>
+        <li><a href="../../pages/about/advantage.html">Advantage</a></li>
+        <li><a href="../../pages/about/companies.html">Companies</a></li>
+        <li><a href="../../pages/about/leadership.html">Leadership</a></li>
+      </ul></div>
+      <div class="footer__col"><h4>Services</h4><ul>
+        <li><a href="../../pages/about/companies.html">Acquisitions</a></li>
+        <li><a href="../../pages/about/companies.html">Lending</a></li>
+        <li><a href="../../pages/about/companies.html">Management</a></li>
+        <li><a href="../../pages/about/companies.html">Construction</a></li>
+      </ul></div>
+      <div class="footer__col"><h4>Connect</h4><ul>
+        <li><a href="../../pages/portfolio/index.html">Portfolio</a></li>
+        <li><a href="../../pages/careers/index.html">Careers</a></li>
+        <li><a href="../../pages/portal/index.html">Investor Portal</a></li>
+        <li><a href="mailto:info@pendletoncompanies.com">Contact Us</a></li>
+      </ul></div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copyright" data-i18n="footer_copy">© 2024 Pendleton Companies. All rights reserved.</p>
+      <nav class="footer__links"><a href="#" data-i18n="footer_privacy">Privacy Policy</a><a href="#" data-i18n="footer_terms">Terms of Service</a></nav>
+    </div>
+  </div>
+</footer>
+<script src="../../js/main.js"></script>
+<script src="../../js/portfolio.js"></script>
+</body>
+</html>
