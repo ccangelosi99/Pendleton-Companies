@@ -1,0 +1,177 @@
+/* ============================================
+   PAGES: PORTAL
+   ============================================ */
+
+.portal-hero {
+  min-height: 100vh;
+  background: var(--clr-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--navbar-h) + var(--sp-12)) var(--sp-6) var(--sp-12);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle geometric background */
+.portal-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(75,172,198,0.06) 0%, transparent 60%),
+    radial-gradient(circle at 80% 30%, rgba(44,74,99,0.4) 0%, transparent 50%);
+}
+
+.portal-hero__content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+  max-width: var(--container-lg);
+}
+
+.portal-hero__label {
+  font-family: var(--font-ui);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semi);
+  letter-spacing: var(--ls-widest);
+  text-transform: uppercase;
+  color: var(--clr-accent);
+  margin-bottom: var(--sp-3);
+}
+
+.portal-hero__title {
+  font-family: var(--font-display);
+  font-size: clamp(var(--fs-3xl), 5vw, var(--fs-5xl));
+  font-weight: var(--fw-bold);
+  color: var(--clr-white);
+  margin-bottom: var(--sp-4);
+}
+
+.portal-hero__subtitle {
+  font-size: var(--fs-md);
+  color: rgba(255,255,255,0.5);
+  max-width: 500px;
+  margin: 0 auto var(--sp-16);
+  line-height: var(--lh-relaxed);
+}
+
+.portal-hero__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--sp-4);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.portal-card {
+  background: rgba(75,172,198,0.5);
+  border: 1px solid rgba(75,172,198,0.55);
+  border-radius: var(--radius-xl);
+  padding: var(--sp-10) var(--sp-6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-4);
+  cursor: pointer;
+  transition: all var(--dur-slow) var(--ease-out);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.portal-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(75,172,198,0.1) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity var(--dur-base) var(--ease-out);
+}
+
+.portal-card:hover {
+  border-color: var(--clr-accent);
+  background: rgba(75,172,198,0.6);
+  transform: translateY(-8px);
+  box-shadow: 0 24px 48px rgba(0,0,0,0.3);
+}
+
+.portal-card:hover::after { opacity: 1; }
+
+.portal-card__icon-wrap {
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-xl);
+  background: rgba(75,172,198,0.8);
+  border: 1px solid rgba(75,172,198,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--dur-base) var(--ease-out);
+  position: relative;
+  z-index: 1;
+}
+
+.portal-card:hover .portal-card__icon-wrap {
+  background: rgba(75,172,198,0.9);
+  transform: scale(1.1);
+}
+
+.portal-card__icon {
+  width: 32px;
+  height: 32px;
+  stroke: #fff;
+}
+
+.portal-card__title {
+  font-family: var(--font-ui);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semi);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  color: var(--clr-white);
+  position: relative;
+  z-index: 1;
+}
+
+.portal-card__desc {
+  font-size: var(--fs-xs);
+  color: rgba(255,255,255,0.4);
+  text-align: center;
+  line-height: var(--lh-relaxed);
+  position: relative;
+  z-index: 1;
+}
+
+.portal-card__arrow {
+  font-size: var(--fs-sm);
+  color: var(--clr-accent);
+  opacity: 0;
+  transform: translateY(8px);
+  transition: all var(--dur-base) var(--ease-out);
+  position: relative;
+  z-index: 1;
+}
+
+.portal-card:hover .portal-card__arrow {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.portal-hero__footer {
+  margin-top: var(--sp-16);
+  text-align: center;
+  color: rgba(255,255,255,0.3);
+  font-size: var(--fs-xs);
+  letter-spacing: var(--ls-wide);
+}
+
+@media (max-width: 768px) {
+  .portal-hero__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .portal-hero__grid { grid-template-columns: 1fr; }
+}
