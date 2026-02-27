@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Access the Pendleton Companies portal for investors, vendors, employees, and applicants.">
+  <meta property="og:title" content="Portal Login | Pendleton Companies">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://www.pendletoncompanies.com">
+  <title>Portal Login | Pendleton Companies</title>
+  <link rel="icon" href="../../assets/icons/favicon.svg?v=2" type="image/svg+xml">
+  <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <a href="../../index.html" class="navbar__brand" aria-label="Pendleton Companies Home">
+    <img src="../../assets/icons/logo.svg" alt="Pendleton Companies Logo" class="navbar__logo" width="56" height="56">
+    <span class="navbar__company-name"><span class="navbar__company-name-pendleton">Pendleton</span> <span class="navbar__company-name-companies">Companies</span></span>
+  </a>
+  <ul class="navbar__nav" role="menubar">
+    <li><a href="../../pages/about/mission.html" class="navbar__link" data-i18n="nav_about">About</a></li>
+    <li><a href="../../pages/portfolio/index.html" class="navbar__link" data-i18n="nav_portfolio">Portfolio</a></li>
+    <li><a href="../../pages/careers/index.html" class="navbar__link" data-i18n="nav_careers">Careers</a></li>
+    <li><a href="../../pages/portal/index.html" class="navbar__link" data-i18n="nav_portal">Portal</a></li>
+    <li><button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+      <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    </button></li>
+    <li><select id="lang-switcher" aria-label="Language" style="font-family:var(--font-ui);font-size:.75rem;background:transparent;border:1px solid rgba(255,255,255,.3);border-radius:4px;color:inherit;padding:4px 8px;cursor:pointer;">
+      <option value="en">EN</option><option value="es">ES</option><option value="fr">FR</option><option value="de">DE</option><option value="zh">ZH</option>
+    </select></li>
+  </ul>
+  <button class="navbar__hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main class="portal-hero" style="background:url('../../assets/images/Portal/portal_hero.jpg') center/cover no-repeat">
+  <div class="portal-hero__content">
+    <p class="portal-hero__label">Secure Access</p>
+    <h1 class="portal-hero__title">Pendleton Portal</h1>
+    <p class="portal-hero__subtitle">Select your portal type to securely log in to your account.</p>
+    <div class="portal-hero__grid">
+      <a href="../../pages/portal/investor-login.html" class="portal-card">
+        <div class="portal-card__icon-wrap">
+          <svg class="portal-card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <div class="portal-card__title">Investors</div>
+        <p class="portal-card__desc">Access your investment dashboard, reports, and distributions</p>
+        <span class="portal-card__arrow">&rarr;</span>
+      </a>
+      <a href="../../pages/portal/vendor-login.html" class="portal-card">
+        <div class="portal-card__icon-wrap">
+          <svg class="portal-card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </div>
+        <div class="portal-card__title">Vendors</div>
+        <p class="portal-card__desc">Submit invoices, track payments, and manage your vendor profile</p>
+        <span class="portal-card__arrow">&rarr;</span>
+      </a>
+      <a href="../../pages/portal/employee-login.html" class="portal-card">
+        <div class="portal-card__icon-wrap">
+          <svg class="portal-card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="portal-card__title">Employees</div>
+        <p class="portal-card__desc">Access HR resources, payroll, benefits, and company news</p>
+        <span class="portal-card__arrow">&rarr;</span>
+      </a>
+      <a href="../../pages/portal/applicant-login.html" class="portal-card">
+        <div class="portal-card__icon-wrap">
+          <svg class="portal-card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        </div>
+        <div class="portal-card__title">Applicants</div>
+        <p class="portal-card__desc">Check your application status and complete your onboarding</p>
+        <span class="portal-card__arrow">&rarr;</span>
+      </a>
+    </div>
+    <p class="portal-hero__footer">Secure SSL encrypted connection &bull; Pendleton Companies &copy; 2024</p>
+  </div>
+</main>
+<footer class="footer">
+  <div class="footer__accent-line"></div>
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="../../index.html"><img src="../../assets/icons/logo.svg" alt="" width="44" height="44"></a>
+        <span style="font-family:var(--font-ui);font-size:1rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:#fff;display:block;margin:.75rem 0 .5rem">Pendleton Companies</span>
+        <p class="footer__tagline">"Proving the best products and the best prices requires a non-stop commitment to value and operational excellence."</p>
+      </div>
+      <div class="footer__col"><h4>Company</h4><ul>
+        <li><a href="../../pages/about/mission.html">Mission</a></li>
+        <li><a href="../../pages/about/story.html">Our Story</a></li>
+        <li><a href="../../pages/about/advantage.html">Advantage</a></li>
+        <li><a href="../../pages/about/companies.html">Companies</a></li>
+        <li><a href="../../pages/about/leadership.html">Leadership</a></li>
+      </ul></div>
+      <div class="footer__col"><h4>Services</h4><ul>
+        <li><a href="../../pages/about/companies.html">Acquisitions</a></li>
+        <li><a href="../../pages/about/companies.html">Lending</a></li>
+        <li><a href="../../pages/about/companies.html">Management</a></li>
+        <li><a href="../../pages/about/companies.html">Construction</a></li>
+      </ul></div>
+      <div class="footer__col"><h4>Connect</h4><ul>
+        <li><a href="../../pages/portfolio/index.html">Portfolio</a></li>
+        <li><a href="../../pages/careers/index.html">Careers</a></li>
+        <li><a href="../../pages/portal/index.html">Investor Portal</a></li>
+        <li><a href="mailto:info@pendletoncompanies.com">Contact Us</a></li>
+      </ul></div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copyright" data-i18n="footer_copy">© 2024 Pendleton Companies. All rights reserved.</p>
+      <nav class="footer__links"><a href="#" data-i18n="footer_privacy">Privacy Policy</a><a href="#" data-i18n="footer_terms">Terms of Service</a></nav>
+    </div>
+  </div>
+</footer>
+<script src="../../js/main.js"></script>
+</body>
+</html>
