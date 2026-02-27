@@ -1,0 +1,100 @@
+/* ============================================
+   LAYOUT: SUBNAV
+   ============================================ */
+
+.subnav {
+  position: fixed;
+  top: var(--navbar-h);
+  left: 0;
+  right: 0;
+  z-index: var(--z-subnav);
+  height: var(--subnav-h);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--clr-primary);
+  border-bottom: 1px solid rgba(75, 172, 198, 0.3);
+  animation: fadeInDown var(--dur-slow) var(--ease-out) both;
+}
+
+.subnav__list {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.subnav__link {
+  font-family: var(--font-ui);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--ls-widest);
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+  padding: var(--sp-2) var(--sp-5);
+  border-radius: var(--radius-sm);
+  transition: color var(--dur-base) var(--ease-out),
+              background-color var(--dur-base) var(--ease-out);
+  position: relative;
+}
+
+.subnav__link::before {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: var(--clr-accent);
+  border-radius: var(--radius-full);
+  transition: width var(--dur-base) var(--ease-out);
+}
+
+.subnav__link:hover {
+  color: var(--clr-white);
+  background: rgba(255,255,255,0.07);
+}
+
+.subnav__link.active {
+  color: var(--clr-accent);
+  font-weight: var(--fw-semi);
+}
+
+.subnav__link.active::before,
+.subnav__link:hover::before {
+  width: 100%;
+}
+
+/* Separator dots */
+.subnav__sep {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.25);
+}
+
+/* Page offset when subnav is present */
+body.has-subnav .page-content {
+  padding-top: calc(var(--navbar-h) + var(--subnav-h));
+}
+
+body:not(.has-subnav) .page-content {
+  padding-top: var(--navbar-h);
+}
+
+@media (max-width: 768px) {
+  .subnav {
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-inline: var(--sp-4);
+    scrollbar-width: none;
+  }
+  .subnav::-webkit-scrollbar { display: none; }
+
+  .subnav__list { gap: 0; flex-shrink: 0; }
+
+  .subnav__link {
+    white-space: nowrap;
+    padding: var(--sp-2) var(--sp-4);
+  }
+}

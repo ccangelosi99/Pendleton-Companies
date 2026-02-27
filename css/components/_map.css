@@ -1,0 +1,90 @@
+/* ============================================
+   COMPONENTS: MAP
+   ============================================ */
+
+.map-container {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--clr-border);
+  background: var(--clr-primary);
+}
+
+.map-container iframe,
+.map-container #leaflet-map,
+.map-container .map-embed {
+  width: 100%;
+  height: 520px;
+  border: none;
+  display: block;
+}
+
+.map-overlay {
+  position: absolute;
+  top: var(--sp-4);
+  left: var(--sp-4);
+  z-index: 10;
+}
+
+.map-legend {
+  background: var(--clr-surface);
+  border-radius: var(--radius-md);
+  padding: var(--sp-4) var(--sp-5);
+  box-shadow: var(--shadow-md);
+  min-width: 160px;
+}
+
+.map-legend h4 {
+  font-family: var(--font-ui);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semi);
+  letter-spacing: var(--ls-widest);
+  text-transform: uppercase;
+  color: var(--clr-text-muted);
+  margin-bottom: var(--sp-3);
+}
+
+.map-legend__item {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: var(--fs-xs);
+  color: var(--clr-text);
+  margin-bottom: var(--sp-2);
+}
+
+.map-legend__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.map-legend__dot--gold { background: var(--clr-accent); }
+.map-legend__dot--navy { background: var(--clr-primary); }
+
+/* US SVG Map */
+.us-map {
+  width: 100%;
+  height: auto;
+}
+
+.us-map .state {
+  fill: var(--clr-light-gray);
+  stroke: var(--clr-white);
+  stroke-width: 0.5;
+  transition: fill var(--dur-base) var(--ease-out);
+  cursor: pointer;
+}
+
+.us-map .state:hover { fill: var(--clr-accent-light); }
+.us-map .state.has-properties { fill: var(--clr-accent); }
+.us-map .state.has-properties:hover { fill: var(--clr-accent-dark); }
+.us-map .state.highlighted { fill: var(--clr-primary-light); }
+
+[data-theme="dark"] .us-map .state { fill: var(--clr-dark-gray); }
+
+@media (max-width: 768px) {
+  .map-container iframe,
+  .map-container #leaflet-map { height: 320px; }
+}
