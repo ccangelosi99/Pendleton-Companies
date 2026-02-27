@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Pendleton sun and waves logo">
+  <defs>
+    <linearGradient id="sunRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7e481"/>
+      <stop offset="100%" stop-color="#f2cc3b"/>
+    </linearGradient>
+    <linearGradient id="sunCore" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5ebb3"/>
+      <stop offset="100%" stop-color="#eadf93"/>
+    </linearGradient>
+    <linearGradient id="waveTop" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#20c6d8"/>
+      <stop offset="100%" stop-color="#40aee8"/>
+    </linearGradient>
+    <linearGradient id="waveBottom" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2bc4e4"/>
+      <stop offset="100%" stop-color="#3aa3e3"/>
+    </linearGradient>
+    <clipPath id="logoClip">
+      <circle cx="256" cy="256" r="240"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#logoClip)">
+    <rect x="0" y="0" width="512" height="512" fill="none"/>
+
+    <path d="M40 272 A216 216 0 0 1 472 272 L356 272 A100 100 0 0 0 156 272 Z" fill="url(#sunRing)"/>
+
+    <line x1="256" y1="170" x2="256" y2="46" stroke="#ffffff" stroke-width="22" stroke-linecap="round"/>
+    <line x1="216" y1="176" x2="168" y2="62" stroke="#ffffff" stroke-width="22" stroke-linecap="round"/>
+    <line x1="186" y1="196" x2="98" y2="106" stroke="#ffffff" stroke-width="22" stroke-linecap="round"/>
+    <line x1="170" y1="224" x2="54" y2="176" stroke="#ffffff" stroke-width="22" stroke-linecap="round"/>
+    <line x1="296" y1="176" x2="344" y2="62" stroke="#ffffff" stroke-width="22" stroke-linecap="round"/>
+    <line x1="326" y1="196" x2="414" y2="106" stroke="#ffffff" stroke-width="22" stroke-linecap="round"/>
+    <line x1="342" y1="224" x2="458" y2="176" stroke="#ffffff" stroke-width="22" stroke-linecap="round"/>
+
+    <path d="M166 272 A90 90 0 0 1 346 272 Z" fill="url(#sunCore)"/>
+
+    <path d="M-8 308 C84 264 176 264 256 308 C336 352 428 352 520 308 L520 396 C428 440 336 440 256 396 C176 352 84 352 -8 396 Z" fill="url(#waveTop)"/>
+    <path d="M-8 396 C84 352 176 352 256 396 C336 440 428 440 520 396 L520 520 L-8 520 Z" fill="url(#waveBottom)"/>
+
+    <path d="M-8 308 C84 264 176 264 256 308 C336 352 428 352 520 308" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round"/>
+    <path d="M-8 396 C84 352 176 352 256 396 C336 440 428 440 520 396" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round"/>
+  </g>
+</svg>
